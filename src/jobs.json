@@ -1,86 +1,200 @@
-[
+{
+  "jobs": [
     {
-      "id": "1",
-      "title": "Senior React Developer",
+      "id": "7",
+      "title": "Machine Learning Engineer",
       "type": "Full-Time",
-      "description": "We are seeking a talented Front-End Developer to join our team in Boston, MA. The ideal candidate will have strong skills in HTML, CSS, and JavaScript, with experience working with modern JavaScript frameworks such as React or Angular.",
-      "location": "Boston, MA",
-      "salary": "$70K - $80K",
+      "description": "We are seeking a talented Machine Learning Engineer to join our AI team in Seattle, WA. The ideal candidate will have strong skills in machine learning algorithms and experience with Python and TensorFlow.",
+      "location": "Seattle, WA",
+      "salary": "$120K - $140K",
       "company": {
-        "name": "NewTek Solutions",
-        "description": "NewTek Solutions is a leading technology company specializing in web development and digital solutions. We pride ourselves on delivering high-quality products and services to our clients while fostering a collaborative and innovative work environment.",
-        "contactEmail": "contact@teksolutions.com",
+        "name": "AI Dynamics",
+        "description": "AI Dynamics is a cutting-edge artificial intelligence company focused on developing innovative solutions for various industries. Join us in shaping the future of AI.",
+        "contactEmail": "careers@aidynamics.com",
         "contactPhone": "555-555-5555"
       }
     },
     {
-      "id": "2",
-      "title": "Front-End Engineer (React & Redux)",
+      "id": "8",
+      "title": "Cybersecurity Analyst",
       "type": "Full-Time",
+      "description": "Join our cybersecurity team in Washington, D.C. We are looking for an experienced Cybersecurity Analyst to help protect our organization's digital assets. Competitive salary and benefits.",
+      "location": "Washington, D.C.",
+      "salary": "$80K - $100K",
+      "company": {
+        "name": "SecureTech Solutions",
+        "description": "SecureTech Solutions is a leading cybersecurity firm dedicated to safeguarding our clients' data and systems from cyber threats. Join us in making the digital world a safer place.",
+        "contactEmail": "info@securetech.com",
+        "contactPhone": "555-555-5555"
+      }
+    },
+    {
+      "id": "9",
+      "title": "DevOps Engineer",
+      "type": "Full-Time",
+      "description": "We are looking for a skilled DevOps Engineer to join our team in Austin, TX. The ideal candidate will have experience with cloud computing platforms and automation tools.",
+      "location": "Austin, TX",
+      "salary": "$90K - $110K",
+      "company": {
+        "name": "CloudWorks Inc",
+        "description": "CloudWorks Inc is a cloud computing company focused on providing scalable and reliable solutions to our clients. Join us in building the future of cloud technology.",
+        "contactEmail": "careers@cloudworks.com",
+        "contactPhone": "555-555-5555"
+      }
+    },
+    {
+      "id": "10",
+      "title": "iOS Developer",
+      "type": "Full-Time",
+      "description": "Join our mobile development team in San Jose, CA. We are seeking an experienced iOS Developer to help us build innovative and user-friendly mobile applications.",
+      "location": "San Jose, CA",
+      "salary": "$90K - $110K",
+      "company": {
+        "name": "App Innovations",
+        "description": "App Innovations is a mobile app development company dedicated to creating cutting-edge applications for our clients. Join us in shaping the future of mobile technology.",
+        "contactEmail": "careers@appinnovations.com",
+        "contactPhone": "555-555-5555"
+      }
+    },
+    {
+      "id": "11",
+      "title": "Product Manager",
+      "type": "Full-Time",
+      "description": "We are seeking a passionate Product Manager to join our team in Los Angeles, CA. The ideal candidate will have experience leading product development from conception to launch.",
+      "location": "Los Angeles, CA",
+      "salary": "$100K - $120K",
+      "company": {
+        "name": "Prodigy Labs",
+        "description": "Prodigy Labs is a product development company focused on creating innovative solutions for our clients. Join us in building products that make a difference.",
+        "contactEmail": "careers@prodigylabs.com",
+        "contactPhone": "555-555-5555"
+      }
+    },
+    {
+      "id": "12",
+      "title": "Content Writer",
+      "type": "Full-Time",
+      "description": "Join our content team in Chicago, IL. We are looking for a talented Content Writer to create engaging and informative content for our website and marketing materials.",
+      "location": "Chicago, IL",
+      "salary": "$60K - $80K",
+      "company": {
+        "name": "ContentCrafters",
+        "description": "ContentCrafters is a content marketing agency dedicated to helping businesses succeed through compelling content. Join us in crafting stories that resonate.",
+        "contactEmail": "careers@contentcrafters.com",
+        "contactPhone": "555-555-5555"
+      }
+    },
+    {
+      "id": "13",
+      "title": "Graphic Designer",
+      "type": "Full-Time",
+      "description": "We are seeking a creative Graphic Designer to join our design team in Miami, FL. The ideal candidate will have a strong portfolio showcasing their design skills.",
       "location": "Miami, FL",
-      "description": "Join our team as a Front-End Developer in sunny Miami, FL. We are looking for a motivated individual with a passion for crafting beautiful and responsive web applications. Experience with UI/UX design principles and a strong attention to detail are highly desirable.",
-      "salary": "$70K - $80K",
+      "salary": "$50K - $70K",
       "company": {
-        "name": "Veneer Solutions",
-        "description": "Veneer Solutions is a creative agency specializing in digital design and development. Our team is dedicated to pushing the boundaries of creativity and innovation to deliver exceptional results for our clients.",
-        "contactEmail": "contact@loremipsum.com",
+        "name": "PixelPerfect Design Studio",
+        "description": "PixelPerfect Design Studio is a graphic design agency focused on delivering visually stunning solutions to our clients. Join us in bringing ideas to life through design.",
+        "contactEmail": "careers@pixelperfect.com",
         "contactPhone": "555-555-5555"
       }
     },
     {
-      "id": "3",
-      "title": "React.js Dev",
+      "id": "14",
+      "title": "Human Resources Manager",
       "type": "Full-Time",
-      "location": "Brooklyn, NY",
-      "description": "Are you passionate about front-end development? Join our team in vibrant Brooklyn, NY, and work on exciting projects that make a difference. We offer competitive compensation and a collaborative work environment where your ideas are valued.",
-      "salary": "$70K - $80K",
-      "company": {
-        "name": "Dolor Cloud",
-        "description": "Dolor Cloud is a leading technology company specializing in digital solutions for businesses of all sizes. With a focus on innovation and customer satisfaction, we are committed to delivering cutting-edge products and services.",
-        "contactEmail": "contact@dolorsitamet.com",
-        "contactPhone": "555-555-5555"
-      }
-    },
-    {
-      "id": "4",
-      "title": "React Front-End Developer",
-      "type": "Part-Time",
-      "description": "Join our team as a Part-Time Front-End Developer in beautiful Pheonix, AZ. We are looking for a self-motivated individual with a passion for creating engaging user experiences. This position offers flexible hours and the opportunity to work remotely.",
-      "location": "Pheonix, AZ",
-      "salary": "$60K - $70K",
-      "company": {
-        "name": "Alpha Elite",
-        "description": "Alpha Elite is a dynamic startup specializing in digital marketing and web development. We are committed to fostering a diverse and inclusive workplace where creativity and innovation thrive.",
-        "contactEmail": "contact@adipisicingelit.com",
-        "contactPhone": "555-555-5555"
-      }
-    },
-    {
-      "id": "5",
-      "title": "Full Stack React Developer",
-      "type": "Full-Time",
-      "description": "Exciting opportunity for a Full-Time Front-End Developer in bustling Atlanta, GA. We are seeking a talented individual with a passion for building elegant and scalable web applications. Join our team and make an impact!",
+      "description": "Join our HR team in Atlanta, GA. We are looking for an experienced Human Resources Manager to oversee all aspects of HR operations.",
       "location": "Atlanta, GA",
-      "salary": "$90K - $100K",
+      "salary": "$80K - $100K",
       "company": {
-        "name": "Browning Technologies",
-        "description": "Browning Technologies is a rapidly growing technology company specializing in e-commerce solutions. We offer a dynamic and collaborative work environment where employees are encouraged to think creatively and innovate.",
-        "contactEmail": "contact@consecteturadipisicing.com",
+        "name": "HR Solutions Inc",
+        "description": "HR Solutions Inc is a human resources consulting firm dedicated to helping organizations optimize their HR functions. Join us in supporting companies and their employees.",
+        "contactEmail": "careers@hrsolutions.com",
         "contactPhone": "555-555-5555"
       }
     },
     {
-      "id": "6",
-      "title": "React Native Developer",
+      "id": "15",
+      "title": "Sales Representative",
       "type": "Full-Time",
-      "description": "Join our team as a Front-End Developer in beautiful Portland, OR. We are looking for a skilled and enthusiastic individual to help us create innovative web solutions. Competitive salary and great benefits package available.",
-      "location": "Portland, OR",
-      "salary": "$100K - $110K",
+      "description": "We are seeking motivated Sales Representatives to join our team in Houston, TX. The ideal candidates will have excellent communication skills and a passion for sales.",
+      "location": "Houston, TX",
+      "salary": "$60K - $80K",
       "company": {
-        "name": "Port Solutions INC",
-        "description": "Port Solutions is a leading technology company specializing in software development and digital marketing. We are committed to providing our clients with cutting-edge solutions and our employees with a supportive and rewarding work environment.",
-        "contactEmail": "contact@ipsumlorem.com",
+        "name": "SalesGenius",
+        "description": "SalesGenius is a sales outsourcing company dedicated to helping businesses accelerate their sales growth. Join us in driving results for our clients.",
+        "contactEmail": "careers@salesgenius.com",
         "contactPhone": "555-555-5555"
+      }
+    },
+    {
+      "id": "16",
+      "title": "Financial Analyst",
+      "type": "Full-Time",
+      "description": "Join our finance team in Dallas, TX. We are looking for a detail-oriented Financial Analyst to provide financial planning and analysis support.",
+      "location": "Dallas, TX",
+      "salary": "$70K - $90K",
+      "company": {
+        "name": "FinancePlus",
+        "description": "FinancePlus is a financial services firm committed to helping clients achieve their financial goals. Join us in making a positive impact through sound financial advice.",
+        "contactEmail": "careers@financeplus.com",
+        "contactPhone": "555-555-5555"
+      }
+    },
+    {
+      "id": "17",
+      "title": "Customer Success Manager",
+      "type": "Full-Time",
+      "description": "We are seeking a dynamic Customer Success Manager to join our team in Boston, MA. The ideal candidate will be passionate about customer satisfaction and retention, with strong communication and problem-solving skills.",
+      "location": "Boston, MA",
+      "salary": "$75K - $90K",
+      "company": {
+        "name": "SuccessTech Solutions",
+        "description": "SuccessTech Solutions is a customer success platform dedicated to helping businesses achieve their goals through exceptional customer experiences. Join us in driving success for our clients.",
+        "contactEmail": "careers@successtech.com",
+        "contactPhone": "555-555-5555"
+      }
+    },
+    {
+      "id": "18",
+      "title": "Quality Assurance Engineer",
+      "type": "Full-Time",
+      "description": "Join our QA team in San Francisco, CA. We are seeking a detail-oriented Quality Assurance Engineer to ensure the quality and reliability of our software products through thorough testing and analysis.",
+      "location": "San Francisco, CA",
+      "salary": "$80K - $100K",
+      "company": {
+        "name": "QA Solutions Inc",
+        "description": "QA Solutions Inc is a software testing company dedicated to delivering high-quality solutions to our clients. Join us in ensuring the success of software projects through rigorous QA processes.",
+        "contactEmail": "careers@qasolutions.com",
+        "contactPhone": "555-555-5555"
+      }
+    },
+    {
+      "id": "a7fd",
+      "title": "qwe",
+      "type": "Full-Time",
+      "location": "qweqwe",
+      "description": "qweqweqwe",
+      "salary": "Under $50K",
+      "company": {
+        "name": "weqwe",
+        "description": "qweq",
+        "contactEmail": "qwe@qwe.qwe",
+        "contactPhone": "qweqwe"
+      }
+    },
+    {
+      "id": "7274",
+      "title": "Cotton Picker",
+      "type": "Remote",
+      "location": "qweqwe",
+      "description": "qwe",
+      "salary": "Over $200K",
+      "company": {
+        "name": "qwe",
+        "description": "qwe",
+        "contactEmail": "qwe@qwe.qwe",
+        "contactPhone": "qwe"
       }
     }
   ]
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/plyr@3/dist/plyr.css">
+  <style>
+    .container {
+      margin: 500px auto;
+      width: 1000px;
+    }
+
+    video {
+
+      width: 100%;
+    }
+
+
+    .plyr--full-ui input[type=range] {
+      font-family: sans-serif;
+      color: indigo;
+    }
+
+    .plyr__control--overlaid {
+      background: rgba(75, 0, 130, .8);
+    }
+
+    .plyr--video .plyr__control.plyr__tab-focus,
+    .plyr--video .plyr__control:hover,
+    .plyr--video .plyr__control[aria-expanded=true] {
+      background: indigo;
+    }
+
+    .plyr__control.plyr__tab-focus {
+      box-shadow: 0 0 0 5px rgba(75, 0, 130, .5);
+    }
+
+    .plyr__menu__container .plyr__control[role=menuitemradio][aria-checked=true]::before {
+      background: indigo;
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/hls.js"></script>
+  <script src="https://unpkg.com/plyr@3"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const source = 'https://fgh5.biananset.net/_v7/fbb29d5d0bc81d66138fa9d978a30bf7a36af8b507380add5975366485836f3876935c90f0f4206f469a29b540cd4fb7a8f1b47400bb8d9aa83e825e0ff1ced5cbffd59429ac0d8a9c80370126b4b5e959c76b89561ec76019fa3c04c31127b9b9fbed6bb60702c2d9edeac99cc21cc146ffb6eb5ad0095c1004471cc65e2325/master.m3u8';
+      const video = document.querySelector('video');
+
+      const defaultOptions = {};
+
+      if (!Hls.isSupported()) {
+        video.src = source;
+        var player = new Plyr(video, defaultOptions);
+      } else {
+        // For more Hls.js options, see https://github.com/dailymotion/hls.js
+        const hls = new Hls();
+        hls.loadSource(source);
+
+        // From the m3u8 playlist, hls parses the manifest and returns
+        // all available video qualities. This is important, in this approach,
+        // we will have one source on the Plyr player.
+        hls.on(Hls.Events.MANIFEST_PARSED, function (event, data) {
+
+          // Transform available levels into an array of integers (height values).
+          const availableQualities = hls.levels.map((l) => l.height)
+          availableQualities.unshift(0) //prepend 0 to quality array
+
+          // Add new qualities to option
+          defaultOptions.quality = {
+            default: 0, //Default - AUTO
+            options: availableQualities,
+            forced: true,
+            onChange: (e) => updateQuality(e),
+          }
+          // Add Auto Label 
+          defaultOptions.i18n = {
+            qualityLabel: {
+              0: 'Auto',
+            },
+          }
+
+          hls.on(Hls.Events.LEVEL_SWITCHED, function (event, data) {
+            var span = document.querySelector(".plyr__menu__container [data-plyr='quality'][value='0'] span")
+            if (hls.autoLevelEnabled) {
+              span.innerHTML = `AUTO (${hls.levels[data.level].height}p)`
+            } else {
+              span.innerHTML = `AUTO`
+            }
+          })
+
+          // Initialize new Plyr player with quality options
+          var player = new Plyr(video, defaultOptions);
+        });
+
+        hls.attachMedia(video);
+        window.hls = hls;
+      }
+
+      function updateQuality(newQuality) {
+        if (newQuality === 0) {
+          window.hls.currentLevel = -1; //Enable AUTO quality if option.value = 0
+        } else {
+          window.hls.levels.forEach((level, levelIndex) => {
+            if (level.height === newQuality) {
+              console.log("Found quality match with " + newQuality);
+              window.hls.currentLevel = levelIndex;
+            }
+          });
+        }
+      }
+    });</script>
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <video controls crossorigin playsinline poster="https://bitdash-a.akamaihd.net/content/sintel/poster.png"></video>
+  </div>
+  <!-- Plyr resources and browser polyfills are specified in the pen settings -->
+  <!-- Hls.js 0.9.x and 0.10.x both have critical bugs affecting this demo. Using fixed git hash to when it was working (0.10.0 pre-release), until https://github.com/video-dev/hls.js/issues/1790 has been resolved -->
+  <script src="https://cdn.rawgit.com/video-dev/hls.js/18bb552/dist/hls.min.js"></script>
+  <script></script>
+</body>
+
+</html>
